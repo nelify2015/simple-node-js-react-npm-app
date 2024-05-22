@@ -1,11 +1,11 @@
 pipeline {
     agent any
-    
-    tools {nodejs "NodeJS22"}
 
     triggers {
         githubPush()
-    }
+    }    
+    
+    tools {nodejs "NodeJS22"}
 
     stages {
         

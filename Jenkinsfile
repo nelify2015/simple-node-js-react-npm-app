@@ -3,6 +3,10 @@ pipeline {
     
     tools {nodejs "NodeJS22"}
 
+    triggers {
+        githubPush()
+    }
+
     stages {
         
         stage('Build') { 
